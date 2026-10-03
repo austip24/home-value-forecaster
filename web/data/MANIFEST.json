@@ -1,0 +1,71 @@
+{
+  "release": "2026-09",
+  "git_sha": "d21a378e3fabd0eb62b03ec06c690597619cda36-dirty",
+  "exported_at": "2026-10-03T01:59:14.287149+00:00",
+  "files": [
+    {
+      "path": "processed/2026-09/forecasts.parquet",
+      "bytes": 371201
+    },
+    {
+      "path": "processed/2026-09/forecasts_fred.parquet",
+      "bytes": 4871
+    },
+    {
+      "path": "processed/2026-09/forecasts_fred_metro.parquet",
+      "bytes": 116177
+    },
+    {
+      "path": "processed/2026-09/macro.parquet",
+      "bytes": 13307
+    },
+    {
+      "path": "processed/2026-09/runs/2026-09_20261003T005800Z/metrics.parquet",
+      "bytes": 5905
+    },
+    {
+      "path": "processed/2026-09/runs/2026-09_20261003T005800Z/run.json",
+      "bytes": 4383
+    },
+    {
+      "path": "processed/2026-09/runs_fred/2026-09_20261003T011213Z_fred/metrics.parquet",
+      "bytes": 3836
+    },
+    {
+      "path": "processed/2026-09/runs_fred/2026-09_20261003T011213Z_fred/run.json",
+      "bytes": 3836
+    },
+    {
+      "path": "processed/2026-09/runs_fred_metro/2026-09_20261003T014512Z_fred_metro/metrics.parquet",
+      "bytes": 5745
+    },
+    {
+      "path": "processed/2026-09/runs_fred_metro/2026-09_20261003T014512Z_fred_metro/run.json",
+      "bytes": 3848
+    },
+    {
+      "path": "processed/2026-09/unemployment_metro.parquet",
+      "bytes": 161819
+    },
+    {
+      "path": "processed/2026-09/unemployment_metro_crosswalk.parquet",
+      "bytes": 12284
+    },
+    {
+      "path": "raw/fred/2026-09/cpi_national_na_sa.csv",
+      "bytes": 27019
+    },
+    {
+      "path": "raw/fred/2026-09/mortgage30_national_na_nsa.csv",
+      "bytes": 78400
+    },
+    {
+      "path": "raw/fred/2026-09/unrate_national_na_sa.csv",
+      "bytes": 24582
+    },
+    {
+      "path": "raw/zillow/2026-09/zhvi_metro_allhomes_sm_sa_2026-09.csv",
+      "bytes": 4477489
+    }
+  ]
+}
