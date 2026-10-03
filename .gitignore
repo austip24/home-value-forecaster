@@ -1,39 +1,56 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# Repo-wide ignores. web/, forecaster/ and data/ have their own .gitignore
+# for project-specific rules; this file covers anything that applies everywhere.
 
-# testing
-/coverage
+# --- Secrets (never commit) --------------------------------------------------
+**/.env
+**/.env.*
+!.env.example
+**/*.pem
+**/*.key
 
-# next.js
-/.next/
-/out/
+# --- Local data ---------------------------------------------------------------
+# Raw snapshots and processed outputs are local-only (see data/README.md).
+# data/.gitignore keeps the README; these are a safety net if it's removed.
+data/raw/
+data/processed/
 
-# production
-/build
+# --- Python -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+*.egg-info/
+dist/
 
-# misc
-.DS_Store
-*.pem
-
-# debug
+# --- Node / Next.js -----------------------------------------------------------
+node_modules/
+.next/
+out/
+*.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# --- Editors & OS -------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Tooling ------------------------------------------------------------------
+# Personal Claude Code settings; shared .claude/settings.json stays committable.
+.claude/settings.local.json
+*.log
